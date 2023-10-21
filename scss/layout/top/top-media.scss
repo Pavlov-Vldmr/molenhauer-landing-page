@@ -1,0 +1,45 @@
+@include mq(desctop) {
+}
+@include mq(laptop-l) {
+    .top-section {
+      }
+      
+      .top {
+      
+        &__aside {
+          min-width: 500px;
+          
+      
+          p {
+            max-width: 400px;
+          }
+      
+          &-cta {
+          }
+        }
+        &__cubes {
+        //   bottom: 290px;
+          left: 20px;
+          gap: 30px;
+          .cube {
+            span {
+            }
+            &.thecond{
+                margin-bottom: 40px;
+            }
+          }
+          
+        }
+      }
+      
+}
+@include mq(tablet-l) {
+    
+}
+@include mq(tablet) {
+  
+}
+@include mq(mobile-l) {
+}
+@include mq(mobile-s) {
+}

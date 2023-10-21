@@ -1,0 +1,43 @@
+header {
+//   background-color: $bg-blue;
+//   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .header {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 56px;
+
+    &__nav {
+      ul {
+        display: flex;
+        gap: 32px;
+        li{
+            a{
+                color: #fff;
+            }
+        }
+      }
+    }
+
+    &__toolbar {
+      display: flex;
+      gap: 15px;
+
+      .lang {
+        background-color: #fff;
+        @extend %flex-center;
+        width: 170px;
+        height: 56px;
+      }
+    }
+  }
+}

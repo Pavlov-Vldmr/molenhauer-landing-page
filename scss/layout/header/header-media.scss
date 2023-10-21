@@ -1,0 +1,49 @@
+@include mq(desctop) {
+}
+@include mq(laptop-l) {
+    header {
+        .header {
+          &__nav {
+            display: none;
+            ul {
+              li {
+                a {
+                }
+              }
+            }
+          }
+    
+          &__toolbar {
+            .lang {
+            }
+          }
+        }
+      }
+}
+@include mq(tablet-l) {
+    header {
+        .header {
+          &__nav {
+            display: none;
+            ul {
+              li {
+                a {
+                }
+              }
+            }
+          }
+    
+          &__toolbar {
+            .lang {
+            }
+          }
+        }
+      }
+}
+@include mq(tablet) {
+  
+}
+@include mq(mobile-l) {
+}
+@include mq(mobile-s) {
+}
