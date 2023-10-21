@@ -33,8 +33,7 @@ body {
 
 // custom scrollbar END
 h1 {
-  color: #f7f7f7;
-
+  color: #000;
   font-family: "Source Sans Pro";
   font-size: 64px;
   font-style: normal;
@@ -42,20 +41,33 @@ h1 {
   line-height: 70.4px;
   letter-spacing: -1.465px;
 }
+h2{
+  color: var(--White, #000);
+font-family: Source Sans Pro;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: -1px;
+}
 p {
-  color: #fff;
+  color: #737B7D;
   font-family: Source Sans Pro;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 27.5px;
+  
 }
-
+.light-text{
+  color: #fff;
+}
 a {
   text-decoration: none;
 }
 main {
   position: relative;
+  overflow: hidden;
 }
 div.cta {
   a {

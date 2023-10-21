@@ -1,0 +1,49 @@
+.expirience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 280px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 51px;
+    max-width: 536px;
+  }
+
+  &__cards {
+    display: flex;
+    height: 488px;
+    background: url(./../images/imege/expirience-bg.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+    .card {
+      span {
+        color: var(--Corporate-Orange, #da5d24);
+        font-family: Mulish;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%; /* 17px */
+        letter-spacing: 0.3px;
+      }
+      p {
+        margin-top: 195px;
+        color: var(--Headline-2, #2f3034);
+        font-family: Mulish;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%; /* 17px */
+        letter-spacing: 0.3px;
+      }
+      box-sizing: border-box;
+      padding: 55px 42px;
+      border: 1px solid #e2e2e2;
+      height: inherit;
+      width: 288px;
+    }
+  }
+}

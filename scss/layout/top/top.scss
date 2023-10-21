@@ -1,9 +1,9 @@
 .top-section {
-  overflow: hidden;
+  // overflow: hidden;
 
   padding-top: 280px;
   top: 0px;
-  height: calc(1024px - 380px);
+  height: calc(1024px - 280px);
   background: linear-gradient(180deg, #06255b 0%, rgba(6, 37, 91, 0) 100%),
     url(./../assets/images/image/bg-factory.png);
   background-repeat: no-repeat;
@@ -33,6 +33,7 @@
   &__cubes {
     transform: rotate(45deg);
     position: relative;
+    z-index: 7;
     user-select: none;
     bottom: 80px;
     left: 40%;

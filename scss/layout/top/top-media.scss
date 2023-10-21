@@ -1,3 +1,9 @@
+@media (min-width: 1728px){
+  .top-section{
+  background-size: cover;
+
+  }
+}
 @include mq(desctop) {
 }
 @include mq(laptop-l) {
