@@ -25,8 +25,6 @@
     transform: skewX(-45deg) translateX(900px);
   }
 
-  
-
   &__items-container {
     position: relative;
     z-index: 6;
@@ -45,8 +43,8 @@
     }
 
     .items {
-        position: relative;
-        z-index: 10;
+      position: relative;
+      z-index: 10;
       display: grid;
       width: fit-content;
       grid-template-columns: repeat(3, 1fr);
@@ -126,7 +124,50 @@
     bottom: -80px;
     left: 44%;
   }
-}
 
-.parent {
+  &__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    position: absolute;
+    bottom: -110px;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    p {
+      width: 220px;
+      text-align: center;
+      color: #53565a;
+      text-align: center;
+      font-family: Source Sans Pro;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 21.6px */
+      letter-spacing: 0.257px;
+    }
+
+    a {
+      width: 23px;
+      height: 23px;
+      background-image: url(./../assets/images/icons/scroll-down-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-y: bottom;
+    }
+  }
+
+  &__math {
+    width: 125px;
+    height: 37px;
+    position: absolute;
+    z-index: 999;
+    bottom: -20px;
+    left: 200px;
+    background-image: url(./../assets/images/image/math-example-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

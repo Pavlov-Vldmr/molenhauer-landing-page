@@ -1,0 +1,11 @@
+.clients{
+    position: relative;
+    z-index: 2;
+
+    .key-player{
+
+        &__items{
+            display: flex;
+        }
+    }
+}
