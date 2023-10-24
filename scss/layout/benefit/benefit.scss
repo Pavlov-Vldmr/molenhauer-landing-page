@@ -105,28 +105,7 @@
       position: absolute;
       right: -52px;
       &__btns {
-        display: flex;
-        justify-content: center;
         margin-left: 163px;
-        button {
-          cursor: pointer;
-          height: 71px;
-          width: 71px;
-          color: white;
-          font-weight: 900;
-          border: none;
-
-          &:first-child {
-            background-color: #06255b;
-          }
-          &:last-child {
-            background-color: #da5d24;
-          }
-
-          &:hover {
-            opacity: 0.7;
-          }
-        }
       }
       &__dots {
         background-color: white;
@@ -146,7 +125,7 @@
         }
 
         button._dot {
-            cursor: pointer;
+          cursor: pointer;
           position: relative;
           overflow: hidden;
           border-radius: 0%;

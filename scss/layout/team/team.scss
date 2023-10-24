@@ -1,0 +1,72 @@
+.team {
+  position: relative;
+  z-index: 999;
+}
+%member-card {
+  width: 215px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 44px;
+  span.member-name {
+    height: 48px;
+    width: 100px;
+    color: #000;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+  }
+
+  span.member-position {
+    width: 175px;
+    color: #000;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+  }
+}
+.team-container {
+  margin-top: 80px;
+  margin-left: 77px;
+  position: relative;
+  display: flex;
+  gap: 1px;
+  width: fit-content;
+  border-bottom: 1px dashed gray;
+  &::before {
+    z-index: 11;
+    width: 303px;
+    color: #0e0e0c;
+    font-family: 'Source Sans Pro';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: absolute;
+    content: attr(title) ;
+    transform: rotate(-90deg);
+    bottom: 132px;
+    left: -220px;
+  }
+  &::after{
+    z-index: 10;
+    content: '';
+    transform: rotate(-90deg);
+    display: block;
+    position: absolute;
+    width: 88px;
+    height: 26px;
+    background: #ff7c40;
+    bottom: 29px;
+    left: -105px;
+  }
+
+
+  .team-member {
+    @extend %member-card;
+  }
+}

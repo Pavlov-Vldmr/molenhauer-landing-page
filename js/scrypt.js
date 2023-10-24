@@ -45,4 +45,60 @@ $(document).ready(function () {
     }
     slide(benefitCount, benefitSlides, benefitDots);
   });
+
+  const keyPlayerNext = $(".key-player__nav-next-button");
+  const keyPlayerPrev = $(".key-player_nav-prev-button");
+  const keyPlayerSlider = $(".key-player__items");
+  const slideWidth = 365;
+
+  function shiftSlide(direction) {
+    if (keyPlayerSlider.hasClass("transition")) return;
+    $(document).off("mouseup");
+    keyPlayerSlider
+      .addClass("transition")
+      .css("transform", "translateX(" + direction * slideWidth + "px)");
+    setTimeout(function () {
+      if (direction === 1) {
+        $(".key-player__items-item:first").before($(".key-player__items-item:last"));
+      } else if (direction === -1) {
+        $(".key-player__items-item:last").after($(".key-player__items-item:first"));
+      }
+      keyPlayerSlider.removeClass("transition");
+      keyPlayerSlider.css("transform", "translateX(0px)");
+    }, 700);
+  }
+
+  keyPlayerNext.on("click", function () {
+    shiftSlide(-1);
+  });
+
+  keyPlayerPrev.on("click", function () {
+    shiftSlide(1);
+  });
+
+
+  const clientsSaySlides = $(".clients-say__slider__item");
+  const clientsSayNext = $(".client-say__nav-next-button");
+  const clientsSayPrev = $(".client-say__nav-prev-button");
+  const clientsSayDots = $(".clients-say_slider-dot");
+  let clientSayCount = 0;
+
+  $(clientsSaySlides[0]).addClass("_active");
+  $(clientsSayDots[0]).addClass("_checked");
+
+  clientsSayNext.on("click", function () {
+    clientSayCount++;
+    if (clientSayCount >= clientsSaySlides.length) {
+      clientSayCount = 0;
+    }
+    slide(clientSayCount, clientsSaySlides, clientsSayDots);
+  });
+
+  clientsSayPrev.on("click", function () {
+    clientSayCount--;
+    if (clientSayCount < 0) {
+      clientSayCount = clientsSaySlides.length - 1;
+    }
+    slide(clientSayCount, clientsSaySlides, clientsSayDots);
+  });
 });
