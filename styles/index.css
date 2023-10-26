@@ -1153,6 +1153,26 @@ header .header__toolbar .lang {
 .team {
   position: relative;
   z-index: 999;
+  margin-top: 184px;
+}
+.team__title {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 420px;
+}
+.team__title span {
+  color: #da5d24;
+  font-family: Source Sans Pro;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 32px */
+  letter-spacing: -1px;
+}
+.team .row {
+  display: flex;
+  gap: 144px;
 }
 
 .team-container .team-member {
@@ -1180,6 +1200,16 @@ header .header__toolbar .lang {
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 16px */
+}
+.team-container .leadership-member.team-member {
+  width: 576px;
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+}
+.team-container .leadership-member.team-member .column {
+  display: flex;
+  flex-direction: column;
 }
 
 .team-container {

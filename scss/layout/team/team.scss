@@ -1,6 +1,28 @@
 .team {
   position: relative;
   z-index: 999;
+  margin-top: 184px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 420px;
+
+    span {
+      color: #da5d24;
+      font-family: Source Sans Pro;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 32px */
+      letter-spacing: -1px;
+    }
+  }
+  .row {
+    display: flex;
+    gap: 144px;
+  }
 }
 %member-card {
   width: 215px;
@@ -28,7 +50,19 @@
     font-weight: 400;
     line-height: 100%; /* 16px */
   }
+  &.leadership-member{
+    width: 576px;
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+
+    .column{
+      display:flex;
+      flex-direction: column;
+    }
+  }
 }
+
 .team-container {
   margin-top: 80px;
   margin-left: 77px;
@@ -41,20 +75,20 @@
     z-index: 11;
     width: 303px;
     color: #0e0e0c;
-    font-family: 'Source Sans Pro';
+    font-family: "Source Sans Pro";
     font-size: 32px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     position: absolute;
-    content: attr(title) ;
+    content: attr(title);
     transform: rotate(-90deg);
     bottom: 132px;
     left: -220px;
   }
-  &::after{
+  &::after {
     z-index: 10;
-    content: '';
+    content: "";
     transform: rotate(-90deg);
     display: block;
     position: absolute;
@@ -64,7 +98,6 @@
     bottom: 29px;
     left: -105px;
   }
-
 
   .team-member {
     @extend %member-card;
