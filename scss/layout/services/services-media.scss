@@ -1,0 +1,56 @@
+@media (max-width: 1900px) {
+  .services {
+    $height: 1130px;
+    $p-t: 104px;
+
+    &__title {
+    }
+
+    &__bg-w {
+    }
+
+    &__items-container {
+      .formula {
+      }
+
+      .items {
+        gap: 28px;
+
+        .item {
+          a {
+            span {
+              &::after {
+              }
+            }
+          }
+        }
+      }
+    }
+    &__bg-factory {
+    }
+
+    &__scroll {
+      p {
+      }
+
+      a {
+      }
+    }
+
+    &__math {
+    }
+  }
+}
+
+@include mq(desctop) {
+}
+@include mq(laptop-l) {
+}
+@include mq(tablet-l) {
+}
+@include mq(tablet) {
+}
+@include mq(mobile-l) {
+}
+@include mq(mobile-s) {
+}

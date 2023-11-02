@@ -1,7 +1,133 @@
+%member-card {
+  width: 215px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 44px;
+
+  img {
+    position: relative;
+    z-index: 20;
+  }
+
+  span.member-name {
+    height: 48px;
+    width: 100px;
+    color: #000;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+  }
+
+  span.member-position {
+    width: 175px;
+    color: #000;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+  }
+  &.leadership-member {
+    width: 576px;
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .member-name {
+        color: #000;
+        height: auto;
+        font-family: "Source Sans Pro";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 36px */
+      }
+      .member-position {
+        display: flex;
+        gap: 16px;
+        color: #000;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 16px */
+
+        &:before {
+          content: "";
+          display: block;
+          width: 19px;
+          height: 19px;
+          background-position-y: center;
+          background-image: url(./../assets/images/icons/arrow-right-orange.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      .member-text {
+        color: var(--light-gray-dark, #737b7d);
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 137.5% */
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+}
+
 .team {
   position: relative;
   z-index: 999;
   margin-top: 184px;
+
+  &-container {
+    margin-top: 80px;
+    margin-left: 77px;
+    position: relative;
+    display: flex;
+    gap: 1px;
+    width: fit-content;
+    border-bottom: 1px dashed gray;
+    &::before {
+      z-index: 11;
+      width: 303px;
+      color: #0e0e0c;
+      font-family: "Source Sans Pro";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      position: absolute;
+      content: attr(title);
+      transform: rotate(-90deg);
+      bottom: 132px;
+      left: -220px;
+    }
+    &::after {
+      z-index: 10;
+      content: "";
+      transform: rotate(-90deg);
+      display: block;
+      position: absolute;
+      width: 88px;
+      height: 26px;
+      background: #ff7c40;
+      bottom: 29px;
+      left: -105px;
+    }
+
+    .team-member {
+      @extend %member-card;
+    }
+  }
 
   &__title {
     display: flex;
@@ -19,87 +145,59 @@
       letter-spacing: -1px;
     }
   }
+  &__leadership {
+    display: flex;
+    gap: 100px;
+
+    .leadership-member {
+      .member-photo {
+        position: relative;
+        z-index: 20;
+        display: block;
+        min-width: 287px;
+        max-height: 345px;
+        object-fit: cover;
+        background-image: url(./../../../assets/images/image/members/default-member.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &::after{
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: 19;
+          width: 246.258px;
+          height: 189.915px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        
+      }
+
+      &:first-child {
+        .member-photo::after{
+          
+          background-image: url(./../../../assets/images/image/Rectangle1.svg);
+          
+          bottom: 0;
+          right: -40px;
+        }
+        
+      }
+      &:last-child {
+        .member-photo::after{
+          
+          background-image: url(./../../../assets/images/image/Rectangle2.svg);
+          bottom: -30px;
+          left: 20px;
+        }
+        
+      }
+    }
+  }
+
   .row {
     display: flex;
     gap: 144px;
-  }
-}
-%member-card {
-  width: 215px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 44px;
-  span.member-name {
-    height: 48px;
-    width: 100px;
-    color: #000;
-    font-family: Source Sans Pro;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 24px */
-  }
-
-  span.member-position {
-    width: 175px;
-    color: #000;
-    font-family: Source Sans Pro;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%; /* 16px */
-  }
-  &.leadership-member{
-    width: 576px;
-    display: flex;
-    flex-direction: row;
-    gap: 46px;
-
-    .column{
-      display:flex;
-      flex-direction: column;
-    }
-  }
-}
-
-.team-container {
-  margin-top: 80px;
-  margin-left: 77px;
-  position: relative;
-  display: flex;
-  gap: 1px;
-  width: fit-content;
-  border-bottom: 1px dashed gray;
-  &::before {
-    z-index: 11;
-    width: 303px;
-    color: #0e0e0c;
-    font-family: "Source Sans Pro";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    position: absolute;
-    content: attr(title);
-    transform: rotate(-90deg);
-    bottom: 132px;
-    left: -220px;
-  }
-  &::after {
-    z-index: 10;
-    content: "";
-    transform: rotate(-90deg);
-    display: block;
-    position: absolute;
-    width: 88px;
-    height: 26px;
-    background: #ff7c40;
-    bottom: 29px;
-    left: -105px;
-  }
-
-  .team-member {
-    @extend %member-card;
   }
 }

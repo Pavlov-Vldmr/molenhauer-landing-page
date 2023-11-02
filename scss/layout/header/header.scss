@@ -1,6 +1,6 @@
 header {
-//   background-color: $bg-blue;
-//   position: absolute;
+  //   background-color: $bg-blue;
+  //   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
@@ -14,24 +14,40 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 56px;
-
+    padding-top: 48px;
+   &__logo{
+    margin-left: 87px;
+    transform: translateY(-16px);
+   }
     &__nav {
       ul {
         display: flex;
         gap: 32px;
-        li{
-            a{
-                color: #fff;
-            }
+        li {
+          a {
+            color: #fff;
+            font-family: 'Source Sans Pro';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px; /* 120% */
+            letter-spacing: 0.2px;
+          }
         }
       }
     }
 
     &__toolbar {
       display: flex;
-      gap: 15px;
+      gap: 16px;
 
+
+      &-cta{
+        a{
+          width: 143px;
+
+        }
+      }
       .lang {
         background-color: #fff;
         @extend %flex-center;

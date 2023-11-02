@@ -17,8 +17,6 @@
     display: flex;
     flex-direction: column;
     min-width: 723px;
-    // max-width: 723px;
-
     gap: 24px;
 
     p {
@@ -37,7 +35,6 @@
     user-select: none;
     bottom: 80px;
     left: 40%;
-    // height: fit-content;
     height: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

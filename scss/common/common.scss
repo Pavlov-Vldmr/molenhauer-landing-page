@@ -103,7 +103,10 @@ main {
   overflow: hidden;
 }
 div.cta {
+  // box-sizing: border-box;
   a {
+  box-sizing: border-box;
+
     padding: 0 18px;
     @extend %flex-center;
     // width: 143px;
