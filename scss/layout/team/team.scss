@@ -157,7 +157,7 @@
         min-width: 287px;
         max-height: 345px;
         object-fit: cover;
-        background-image: url(./../../../assets/images/image/members/default-member.png);
+        background-image: url(./../assets/images/image/members/default-member.png);
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -177,7 +177,7 @@
       &:first-child {
         .member-photo::after{
           
-          background-image: url(./../../../assets/images/image/Rectangle1.svg);
+          background-image: url(./../assets/images/image/Rectangle1.svg);
           
           bottom: 0;
           right: -40px;
@@ -187,7 +187,7 @@
       &:last-child {
         .member-photo::after{
           
-          background-image: url(./../../../assets/images/image/Rectangle2.svg);
+          background-image: url(./../assets/images/image/Rectangle2.svg);
           bottom: -30px;
           left: 20px;
         }
