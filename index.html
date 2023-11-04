@@ -14,7 +14,7 @@
 
   <body>
     <header>
-      <div class="header">
+      <div class="header container">
         <div class="header__logo logo">
           <a href=""><img src="./assets/images/image/logo.svg" alt="" /></a>
         </div>
@@ -55,6 +55,11 @@
               Benefit from engineering excellence built on more than 30 years of
               industry experience.
             </p>
+            <div class="top__aside-text-cubes">
+              <span>Agil.</span>
+              <span>Ganzheitlich.</span>
+              <span>Zuverlässig.</span>
+            </div>
             <div class="top__aside-cta">
               <div class="cta cta-light cta-opacity">
                 <a href=""><span>How can we serve you</span></a>
@@ -78,7 +83,7 @@
             <h2 class="light-text">
               Comprehensive Structural Engineering Services
             </h2>
-            <p class="light-text">
+            <p class="light-text services__title-text">
               We accompany you from the first idea of your next construction
               project from the first idea to successful execution.
             </p>
@@ -346,6 +351,14 @@
                     alt=""
                   />
                 </div>
+                <div class="key-player__items-item">
+                  <img
+                    src="./assets/images/image/key-player/zl-logo.png"
+                    width="140px"
+                    height="auto"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
 
@@ -479,29 +492,28 @@
 
           <div class="clients__support">
             <div class="clients__support-title">
-              <span>Holistic. Agile. Reliable</span>
-              <h2>
-                With this triad we line up to support you to realize your
-                projects successfully.
-              </h2>
-              <div class="clients__support-title-arrow"></div>
-            </div>
-            <div class="clients__support-text">
-              <div class="clients__support-text-short">
+              <div class="clients__support-title-aside">
+                <span>Holistic. Agile. Reliable</span>
+                <h2>
+                  With this triad we line up to support you to realize your
+                  projects successfully.
+                </h2>
+                <div class="clients__support-title-aside-arrow"></div>
+              </div>
+              <div class="clients__support-title-text">
                 <p>
                   Today’s construction projects are notable for the diversity of
                   their requirements. While you want your buildings to be safe,
                   economical, and durable, they primarily serve your operations.
                   Our deep industry knowledge helps to optimally incorporate the
-                  variety of usage requirements of the cement
-                </p>
-                <p>
-                  production processes into civil design.<br /><br />
-
+                  variety of usage requirements of the cement production
+                  processes into civil design. <br /><br />
                   We constantly achieve client success by following these three
                   core values for all projects our clients trust us with.
                 </p>
               </div>
+            </div>
+            <div class="clients__support-text">
               <div class="clients__support-text-full">
                 <div>
                   <h3>Holistic planning</h3>
@@ -548,7 +560,7 @@
             <span>These are the experts that turn ideas into reality</span>
           </div>
           <div title="Leadership Team" class="team__leadership team-container">
-            <div class="team-member leadership-member">
+            <div class="leadership-member">
               <div class="member-photo">
                 <img
                   src="./assets/images/image/members/leader1.png"
@@ -567,7 +579,7 @@
                 </p>
               </div>
             </div>
-            <div class="team-member leadership-member">
+            <div class="leadership-member">
               <div class="member-photo">
                 <img
                   src="./assets/images/image/members/leader2.png"
@@ -759,51 +771,57 @@
       <div class="footer">
         <div class="footer__contacts">
           <div class="footer__contacts-logo">
-            <a href="#"><img src="./assets/images/image/logo-small.svg" width="72px" height="55px" alt=""></a>
+            <a href="#"
+              ><img
+                src="./assets/images/image/logo-small.svg"
+                width="72px"
+                height="55px"
+                alt=""
+            /></a>
           </div>
           <div class="footer__contacts-contacts">
             <span class="footer__contacts-contacts-title">Contacts::</span>
             <div class="footer__contacts-contacts-info">
-              <p>Erwitter Str. 40  
-                59590 Geseke    
-                GERMANY</p>
-                <span>+49 29 42 / 97 83 71</span>
-                <a href="#" class="email">info@m-bp.de</a>
+              <p class="adr">Erwitter Str. 40 59590 Geseke GERMANY</p>
+              <span>+49 29 42 / 97 83 71</span>
+              <a href="#" class="email">info@m-bp.de</a>
             </div>
             <div class="socials">
-              <span>Our Social Media:</span>
+              <span class="socials-title">Our Social Media:</span>
               <div class="socials-links">
-                <a href="#" class="socials-links-ig" alt="instagram">Ig</a>
-                <a href="#" class="socials-links-fb" alt="facebook" >Fb</a>
+                <a href="#" class="socials-links-item" alt="instagram"
+                  ><span>Ig</span></a
+                >
+                <a href="#" class="socials-links-item" alt="facebook"
+                  ><span>Fb</span></a
+                >
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__y-map-container">
+        <div class="footer__map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3150.507815580997!2d30.31213549562399!3d59.940067263009425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0K3RgNC80LjRgtCw0LY!5e0!3m2!1sru!2sru!4v1671661837199!5m2!1sru!2sru"
             width="100%"
-            height="280px"
-            
+            height="100%"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <div class="footer__bottom">
-          <div class="privacy">
-            <a href="">Imprint</a>
-            <a href="">Data Privacy</a>
+          <div class="container footer__bottom-container">
+            <div class="privacy">
+              <a href="">Imprint</a>
+              <a href="">Data Privacy</a>
+            </div>
+            <div class="copyright">
+              <span>Copyright : mbp | Mollenhauer Beraten & Planen GmbH</span>
+            </div>
+            <span>Consulting & Structural Engineering Design</span>
           </div>
-          <div class="copyright">
-            <span>Copyright : mbp | Mollenhauer Beraten & Planen GmbH</span>
-          </div>
-          <span>Consulting & Structural Engineering Design</span>
         </div>
       </div>
     </footer>
   </body>
-
-  <!-- jquery -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
 </html>

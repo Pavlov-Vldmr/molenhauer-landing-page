@@ -1,0 +1,152 @@
+@media (max-width: 1900px) {
+}
+
+@include mq(desctop) {
+}
+@include mq(laptop-l) {
+}
+@include mq(tablet-l) {
+  .clients {
+    &__bg-gray {
+    }
+    h2 {
+    }
+    .key-player {
+      .stage-outer {
+        width: 100%;
+        padding: 0;
+        &::before,
+        &::after {
+        }
+        &::before {
+          left: -75px;
+        }
+        &::after {
+        }
+      }
+      &__items {
+        gap: 40px;
+        padding-left: 75px;
+        transform: translateX(-75px);
+        left: -263px;
+        &-item {
+          width: 223px;
+          &::after {
+          }
+        }
+        &.transition {
+        }
+      }
+
+      &__nav {
+        button {
+          display: none;
+          &:first-child {
+          }
+          &:last-child {
+          }
+        }
+      }
+    }
+
+    .clients-say {
+      gap: 16px;
+      &__title {
+        max-width: 238px;
+        p {
+        }
+      }
+      &__slider {
+        &__items-container {
+          margin-right: 68px;
+          height: 440px;
+          .item {
+            padding-top: 93px;
+            padding-left: 54px;
+            img {
+              height: 46px;
+              width: auto;
+            }
+
+            p.text {
+              font-size: 15px;
+              max-width: 430px;
+              margin-top: 29px;
+              margin-bottom: 30px;
+            }
+
+            span.name {
+              font-size: 15px;
+            }
+            span.position {
+              font-size: 12px;
+            }
+          }
+          ._active {
+          }
+        }
+        .nav {
+          &__dots {
+            button._dot {
+              &._checked {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__support {
+      &-title {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 17px;
+        &-aside {
+          span {
+            font-size: 16px;
+          }
+          h2 {
+            font-size: 30px;
+          }
+          &-arrow {
+          }
+        }
+
+        &-text {
+          width: 100%;
+
+          p {
+            column-count: 1;
+            font-size: 13px;
+          }
+        }
+      }
+      &-text {
+        // gap: 18px;
+
+        &-full {
+          // gap: 18px;
+        grid-column-gap: 18px;
+
+          div {
+            gap: 24px;
+
+            h3 {
+              font-size: 26px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include mq(tablet) {
+}
+@include mq(mobile-l) {
+}
+@include mq(mobile-s) {
+}

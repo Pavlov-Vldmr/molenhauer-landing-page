@@ -24,6 +24,7 @@
   .key-player {
     position: relative;
     height: 143px;
+    cursor: grab;
     margin-top: 31px;
 
     .stage-outer {
@@ -64,8 +65,8 @@
     &__items {
       display: flex;
       align-items: center;
-      //   padding: 0 100px;
-
+      position: relative;
+      left: -365px;
       height: inherit;
       width: fit-content;
       // transition: transform .5s ease-in;
@@ -73,7 +74,6 @@
 
       &-item {
         // animation: translateinfinite 25s linear infinite;
-
         flex: 1;
         height: auto;
         width: 292px;
@@ -131,6 +131,7 @@
     display: flex;
     margin-top: 92px;
     gap: 143px;
+    // max-height: 600px;
 
     &__title {
       display: flex;
@@ -151,10 +152,13 @@
     }
     &__slider {
       position: relative;
+      flex-grow: 1;
       &__items-container {
         position: relative;
-        width: 578px;
         height: 600px;
+        // max-width: 578px;
+        // min-width: 100px;
+        // max-height: 600px;
         background-image: url(./../assets/images/image/clients-say-slider-orange.svg);
         background-size: contain;
         background-repeat: no-repeat;
@@ -228,6 +232,7 @@
           gap: 4px;
 
           button._dot {
+            cursor: pointer;
             display: block;
             border-radius: 50%;
             width: 11px;
@@ -246,73 +251,85 @@
 
   &__support {
     display: flex;
+    flex-direction: column;
     margin-top: 189px;
-    gap: 143px;
-
-    &-title {
-      min-width: 290px;
+    gap: 56px;
+    &-title{
       display: flex;
-      flex-direction: column;
-      gap: 24px;
-      span {
-        color: #2f3034;
-
-        font-family: Source Sans Pro;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%; /* 23.4px */
-        letter-spacing: 0.3px;
-      }
-      h2 {
-        color: #da5d24;
-
-        font-family: Source Sans Pro;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%; /* 32px */
-        letter-spacing: -1px;
-      }
-      &-arrow {
-        display: block;
-        background-image: url(./../assets/images/icons/arrow-right-orange.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 35px;
-        height: 15px;
-      }
-    }
-    &-text {
-      display: flex;
-      flex-direction: column;
-      gap: 56px;
-      &-short {
+      flex-direction: row;
+      gap: 134px;
+      &-aside {
+        // min-width: 290px;
         display: flex;
-        flex-direction: row;
-        gap: 39px;
+        flex-direction: column;
+        gap: 24px;
+        span {
+          color: #2f3034;
+          font-family: 'Source Sans Pro';
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%; /* 23.4px */
+          letter-spacing: 0.3px;
+        }
+        h2 {
+          color: #da5d24;
+          font-family: 'Source Sans Pro';
+          max-width: 290px;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 100%; /* 32px */
+          letter-spacing: -1px;
+        }
+        &-arrow {
+          display: block;
+          background-image: url(./../assets/images/icons/arrow-right-orange.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 35px;
+          height: 15px;
+        }
+      }
 
+      &-text{
+        width: 646px;
+        display: flex;
+        align-items: flex-end;
+  
         p {
+          display: block;
+          column-count: 2;
           color: #1a171b;
-
           font-family: "Source Sans Pro";
           font-size: 16px;
           font-style: normal;
           font-weight: 600;
           line-height: 140%; /* 22.4px */
           letter-spacing: 0.3px;
-          width: 322px;
-          &:last-child {
-            width: 285px;
-          }
         }
       }
-      &-full {
-        display: flex;
-        gap: 82px;
+    }
 
+  
+    
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      // gap: 56px;
+      
+      &-full {
+        display: grid;
+        // grid-row: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 82px;
+        // grid-template-rows: (3, 1fr);
+        // display: flex;
+        // gap: 82px;
         div {
-          width: 285px;
+          max-width: 285px;
           display: flex;
           flex-direction: column;
           gap: 24px;
@@ -321,7 +338,6 @@
           h3 {
             max-width: 100px;
             color: #313131;
-
             font-family: Source Sans Pro;
             font-size: 28px;
             font-style: normal;

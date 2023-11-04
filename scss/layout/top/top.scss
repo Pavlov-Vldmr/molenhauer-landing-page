@@ -22,7 +22,22 @@
     p {
       max-width: 530px;
     }
+    &-text-cubes {
+      // display: none;
+      display: none;
+      gap: 24px;
 
+      span {
+        
+        color: #fff;
+        text-align: center;
+        font-family: 'Source Sans Pro';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 85%; /* 17px */
+      }
+    }
     &-cta {
       display: flex;
       gap: 16px;
@@ -90,28 +105,28 @@
         margin-left: 70px;
 
         &::before {
-            content: '';
-            display: block;
-            position: absolute;
+          content: "";
+          display: block;
+          position: absolute;
           z-index: 9;
           left: -22px;
           top: -22px;
           border: 1px solid #ff7c40;
           opacity: 0.8;
           width: 630px;
-            height: 630px;
+          height: 630px;
         }
         &::after {
-            content: '';
-            display: block;
-            position: absolute;
+          content: "";
+          display: block;
+          position: absolute;
           z-index: 9;
           left: 18px;
           top: 14px;
           border: 1px solid #fff;
           opacity: 0.8;
           width: 630px;
-            height: 630px;
+          height: 630px;
         }
       }
       &.third {

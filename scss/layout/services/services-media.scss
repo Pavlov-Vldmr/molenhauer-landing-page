@@ -47,6 +47,70 @@
 @include mq(laptop-l) {
 }
 @include mq(tablet-l) {
+  .services {
+    box-sizing: border-box;
+    padding-top: 60px;
+    $height: 1130px;
+    $p-t: 104px;
+    position: relative;
+    height: 708px;
+
+    &__title {
+      max-width: 300px;
+      &-text {
+        max-width: 245px;
+        line-height: 130%; /* 20.8px */
+        letter-spacing: 0.3px;
+      }
+    }
+
+    &__bg-w {
+      // transform: skewX(-45deg) translateX(710px);
+    }
+
+    &__items-container {
+      position: absolute;
+      top: -500px;
+      left: 540px;
+      bottom: 0;
+      // right: 0;
+      .formula {
+        margin-left: 214px;
+      }
+
+      .items {
+        gap: 20px;
+
+        .item {
+          width: 182px;
+          height: 182px;
+          a {
+            span {
+              &::after {
+              }
+            }
+          }
+        }
+      }
+    }
+    &__bg-factory {
+      width: 430px;
+      bottom: -340px;
+    }
+
+    &__scroll {
+      bottom: -200px;
+      p {
+      }
+
+      a {
+      }
+    }
+
+    &__math {
+      left: 46px;
+    }
+  }
 }
 @include mq(tablet) {
 }

@@ -15,10 +15,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 48px;
-   &__logo{
-    margin-left: 87px;
-    transform: translateY(-16px);
-   }
+
+    .container{
+      padding: 0;
+    }
+
+    &__logo {
+      margin-left: 87px;
+      transform: translateY(-16px);
+    }
     &__nav {
       ul {
         display: flex;
@@ -26,7 +31,7 @@ header {
         li {
           a {
             color: #fff;
-            font-family: 'Source Sans Pro';
+            font-family: "Source Sans Pro";
             font-size: 15px;
             font-style: normal;
             font-weight: 400;
@@ -41,11 +46,9 @@ header {
       display: flex;
       gap: 16px;
 
-
-      &-cta{
-        a{
+      &-cta {
+        a {
           width: 143px;
-
         }
       }
       .lang {

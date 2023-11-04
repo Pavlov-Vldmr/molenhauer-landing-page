@@ -47,21 +47,58 @@ $(document).ready(function () {
   });
 
   const keyPlayerNext = $(".key-player__nav-next-button");
-  const keyPlayerPrev = $(".key-player_nav-prev-button");
+  const keyPlayerPrev = $(".key-player__nav-prev-button");
   const keyPlayerSlider = $(".key-player__items");
-  const slideWidth = 365;
+  const keyPlayerContainer = $(".key-player");
+  // const slideWidth = 365;
+
+  // !!!! Нужно получать
+
+  const threshold = 100;
+  let dragStart, dragEnd;
+
+  keyPlayerContainer.on("mousedown", function (event) {
+    if (keyPlayerSlider.hasClass("transition")) return;
+    dragStart = event.pageX;
+    // console.log(slideWidth);
+    keyPlayerContainer.on("mousemove", function (event) {
+      dragEnd = event.pageX;
+      keyPlayerSlider.css("transform", "translateX(" + dragPos() + "px)");
+    });
+    $(document).on("mouseup", function () {
+      if (dragPos() > threshold) {
+        return shiftSlide(1);
+      }
+      if (dragPos() < -threshold) {
+        return shiftSlide(-1);
+      }
+      shiftSlide(0);
+      // console.log(dragPos)
+    });
+  });
+
+  function dragPos() {
+    return dragEnd - dragStart;
+  }
 
   function shiftSlide(direction) {
     if (keyPlayerSlider.hasClass("transition")) return;
+    const slideWidth = $(".key-player__items-item")[0].offsetWidth;
+    console.log(slideWidth)
     $(document).off("mouseup");
+    keyPlayerContainer.off("mousemove");
     keyPlayerSlider
       .addClass("transition")
       .css("transform", "translateX(" + direction * slideWidth + "px)");
     setTimeout(function () {
       if (direction === 1) {
-        $(".key-player__items-item:first").before($(".key-player__items-item:last"));
+        $(".key-player__items-item:first").before(
+          $(".key-player__items-item:last")
+        );
       } else if (direction === -1) {
-        $(".key-player__items-item:last").after($(".key-player__items-item:first"));
+        $(".key-player__items-item:last").after(
+          $(".key-player__items-item:first")
+        );
       }
       keyPlayerSlider.removeClass("transition");
       keyPlayerSlider.css("transform", "translateX(0px)");
@@ -70,12 +107,12 @@ $(document).ready(function () {
 
   keyPlayerNext.on("click", function () {
     shiftSlide(-1);
+    // alert('01')
   });
 
   keyPlayerPrev.on("click", function () {
     shiftSlide(1);
   });
-
 
   const clientsSaySlides = $(".clients-say__slider__item");
   const clientsSayNext = $(".client-say__nav-next-button");
@@ -100,5 +137,11 @@ $(document).ready(function () {
       clientSayCount = clientsSaySlides.length - 1;
     }
     slide(clientSayCount, clientsSaySlides, clientsSayDots);
+  });
+
+  clientsSayDots.each(function (index) {
+    $(this).on("click", function () {
+      slide(index, clientsSaySlides, clientsSayDots);
+    });
   });
 });

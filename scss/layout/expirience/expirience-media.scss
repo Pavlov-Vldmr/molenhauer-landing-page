@@ -1,0 +1,65 @@
+@media (max-width: 1900px) {
+    
+  }
+  
+  @include mq(desctop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(tablet-l) {
+    .expirience {
+      
+        &__bg-gray {
+        }
+      
+        &__title {
+        
+          h2,
+          p {
+          }
+        }
+      
+        &__cards {
+            height: 355px;
+          
+      
+          .card {
+            padding: 40px 27px;
+            &:nth-child(n + 5){
+                display: none;
+                // background-color: red;
+            }
+           
+            span,
+            p {
+           
+            }
+            span {
+            }
+            p {
+                margin-top: 128px;
+                font-size: 13px;
+            }
+      
+            &::before {
+            }
+      
+            &:hover {
+              &::before {
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+      
+
+  }
+  @include mq(tablet) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(mobile-s) {
+  }
+  

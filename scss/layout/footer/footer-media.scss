@@ -1,0 +1,113 @@
+@media (max-width: 1900px) {
+}
+
+@include mq(desctop) {
+}
+@include mq(laptop-l) {
+}
+@include mq(tablet-l) {
+    .footer {
+        &::before {
+          top: -143px;
+          width: 156px;
+          height: 143px;
+        }
+        &__contacts {
+          padding: 20px 0 19px 44px;
+          gap: 57px;
+          top: 22px;
+          width: 361px;
+          height: 240px;
+
+          &-logo{
+            a>img{
+                width: 54px;
+                height: 41px;
+            }
+          }
+      
+          &-contacts {
+      
+            &-title {
+              font-size: 13px;
+              margin-bottom: 17px;
+            }
+      
+            &-info {
+              gap: 16px;
+              padding-bottom: 13px;
+              margin-bottom: 19px;
+              border-bottom: 1px solid #ff7c4045;
+      
+              p,
+              span,
+              a.email {
+                font-size: 13px;
+              }
+              p.adr {
+                width: auto;
+              }
+              a.email {
+                color: #ff7c40;
+              }
+            }
+            .socials {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              &-title {
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 22px; /* 146.667% */
+                margin-right: 0px;
+              }
+              &-links {
+                display: flex;
+                gap: 12px;
+                &-item {
+                  width: 30px;
+                  height: 30px;
+                  span {
+                    font-size: 13px;
+                  }
+                  &::before {
+                    width: 30px;
+                    height: 30px;
+                    transform: translate(-30px, 30px) rotate(45deg);
+                  }
+                  &:hover {
+                    &::before {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+        &__map-container{
+            height: 280px;
+          }
+
+        &__bottom {
+          height: 55px;
+          
+          &-container{
+      
+            span, a{
+              font-size: 12px;
+            }
+          }
+         
+         
+        }
+      }
+      
+      
+}
+@include mq(tablet) {
+}
+@include mq(mobile-l) {
+}
+@include mq(mobile-s) {
+}

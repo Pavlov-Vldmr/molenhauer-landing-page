@@ -41,61 +41,60 @@ h1 {
   line-height: 70.4px;
   letter-spacing: -1.465px;
 }
-h2{
+h2 {
   color: var(--White, #000);
-font-family: Source Sans Pro;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 40px;
-letter-spacing: -1px;
+  font-family: Source Sans Pro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
 }
-h3{
-  color: #313131; 
-  font-family: 'Source Sans Pro';
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
+h3 {
+  color: #313131;
+  font-family: "Source Sans Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
 }
 p {
-  color: #737B7D;
+  color: #737b7d;
   font-family: Source Sans Pro;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 27.5px;
-  
 }
-.light-text{
+.light-text {
   color: #fff;
 }
 a {
   text-decoration: none;
 }
 
-.main-nav-slider-btns{
+.main-nav-slider-btns {
   display: flex;
-        justify-content: center;
-        
-        button {
-          cursor: pointer;
-          height: 71px;
-          width: 71px;
-          color: white;
-          font-weight: 900;
-          border: none;
+  justify-content: center;
 
-          &:first-child {
-            background-color: #06255b;
-          }
-          &:last-child {
-            background-color: #da5d24;
-          }
+  button {
+    cursor: pointer;
+    height: 71px;
+    width: 71px;
+    color: white;
+    font-weight: 900;
+    border: none;
 
-          &:hover {
-            opacity: 0.7;
-          }
-        }
+    &:first-child {
+      background-color: #06255b;
+    }
+    &:last-child {
+      background-color: #da5d24;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 main {
@@ -104,13 +103,14 @@ main {
 }
 div.cta {
   // box-sizing: border-box;
+  height: 56px;
   a {
-  box-sizing: border-box;
-
+    box-sizing: border-box;
+    height: inherit;
     padding: 0 18px;
     @extend %flex-center;
     // width: 143px;
-    height: 56px;
+    // height: 56px;
     background-color: $color_primary;
     transition: all 0.7s ease-in-out;
     span {
@@ -141,20 +141,68 @@ div.cta {
     a {
       border: 2px solid #fff;
       background: rgba(6, 37, 91, 0.6);
-      span{
+      span {
         color: #fff;
       }
 
-      &:hover{
+      &:hover {
         background-color: #fff;
-        span{
-          color: #06255B;
+        span {
+          color: #06255b;
         }
       }
     }
   }
 }
-//
+
+@include mq(desctop) {
+}
+@include mq(laptop-l) {
+}
+@include mq(tablet-l) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3{
+    font-size: 26px;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+@include mq(tablet) {
+}
+@include mq(mobile-l) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3{
+    font-size: 26px;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+@include mq(mobile-s) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3{
+    font-size: 26px;
+  }
+  p{
+    font-size: 18px;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -183,7 +231,7 @@ div.cta {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 750px;
   }
 }
 @media (min-width: 992px) {
