@@ -59,6 +59,53 @@
   @include mq(tablet) {
   }
   @include mq(mobile-l) {
+    .expirience {
+      padding-top: 108px;
+      &__bg-gray {
+      }
+    
+      &__title {
+        margin-bottom: 24px;
+        h2,
+        p {
+        }
+      }
+    
+      &__cards {
+          height: 641px;
+          background-size: auto;
+        
+    
+        .card {
+          padding: 40px 27px;
+          &:nth-child(n + 2){
+              display: none;
+              // background-color: red;
+          }
+         
+          span,
+          p {
+            
+          }
+          span {
+          }
+          p {
+              margin-top: 340px;
+              font-size: 24px;
+          }
+    
+          &::before {
+          }
+    
+          &:hover {
+            &::before {
+            }
+            p {
+            }
+          }
+        }
+      }
+    }
   }
   @include mq(mobile-s) {
   }

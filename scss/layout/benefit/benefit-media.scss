@@ -18,8 +18,8 @@
       }
     }
     &__slider-container {
-        flex-direction: column-reverse;
-        height: auto;
+      flex-direction: column-reverse;
+      height: auto;
       .stage-outer {
         // width: 0px;
         height: 305px;
@@ -34,8 +34,8 @@
             }
 
             .text {
-                margin-top: 32px;
-                max-width: 238px;
+              margin-top: 32px;
+              max-width: 238px;
               h3 {
               }
               p {
@@ -53,27 +53,26 @@
         top: 5px;
 
         &__btns {
-            display: none;
+          display: none;
         }
         &__dots {
-            width: auto;
-            padding: 12px 16px 12px 44px;
-            gap: 17px;
+          width: auto;
+          padding: 12px 16px 12px 44px;
+          gap: 17px;
           .pipe {
           }
 
           button._dot {
             width: 95px;
             p {
-                font-size: 16px;
+              font-size: 16px;
             }
 
             &._checked {
-                min-width: 159px;
-                width: 159px;
+              min-width: 159px;
+              width: 159px;
               p {
                 width: 159px;
-
               }
             }
           }
@@ -85,6 +84,66 @@
 @include mq(tablet) {
 }
 @include mq(mobile-l) {
+  .benefit {
+    &__title {
+      flex-direction: column;
+      padding-top: 112px;
+      div,
+      p {
+      }
+      div > h2 {
+        width: auto;
+      }
+      p {
+      }
+    }
+    &__slider-container {
+      flex-direction: column-reverse;
+      height: auto;
+      .stage-outer {
+        // width: 0px;
+        min-height: 497px;
+      }
+
+      .slider {
+        &__items-container {
+          .benefit-slider-item {
+            width: inherit;
+            flex-direction: column;
+            img {
+              max-width: inherit;
+              height: 293px;
+            }
+
+            .text {
+              margin-top: 0px;
+              width: 100%;
+              max-width: fit-content;
+              h3 {
+              }
+              p {
+              }
+            }
+          }
+          ._active {
+          }
+        }
+      }
+
+      .nav {
+        position: relative;
+        right: 0;
+        top: 5px;
+
+        &__btns {
+          display: none;
+        }
+        &__dots {
+          display: none;
+        }
+      }
+    }
+  }
 }
 @include mq(mobile-s) {
 }

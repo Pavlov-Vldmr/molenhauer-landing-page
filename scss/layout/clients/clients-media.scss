@@ -147,6 +147,149 @@
 @include mq(tablet) {
 }
 @include mq(mobile-l) {
+  .clients {
+    &__bg-gray {
+    }
+    h2 {
+    }
+    .key-player {
+      .stage-outer {
+        width: 100%;
+        padding: 0;
+        &::before,
+        &::after {
+        }
+        &::before {
+          left: -75px;
+        }
+        &::after {
+        }
+      }
+      &__items {
+        gap: 40px;
+        padding-left: 75px;
+        transform: translateX(-75px);
+        left: -263px;
+        &-item {
+          width: 223px;
+          &::after {
+          }
+        }
+        &.transition {
+        }
+      }
+
+      &__nav {
+        button {
+          display: none;
+          &:first-child {
+          }
+          &:last-child {
+          }
+        }
+      }
+    }
+
+    .clients-say {
+      gap: 32px;
+      flex-direction: column;
+      &__title {
+        max-width: 238px;
+        p {
+        }
+      }
+      &__slider {
+        &__items-container {
+          margin-right: 0px;
+          height: 440px;
+          .item {
+            padding-top: 78px;
+            padding-left: 44px;
+            img {
+              height: 38px;
+              width: auto;
+            }
+
+            p.text {
+              font-size: 15px;
+              max-width: 320px;
+              margin-top: 24px;
+              margin-bottom: 20px;
+            }
+
+            span.name {
+              font-size: 15px;
+            }
+            span.position {
+              font-size: 12px;
+            }
+          }
+          ._active {
+          }
+        }
+        .nav {
+          &__dots {
+            button._dot {
+              &._checked {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__support {
+      margin-top: 50px;
+      &-title {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+        grid-column-gap: 17px;
+        &-aside {
+          span {
+            font-size: 16px;
+          }
+          h2 {
+            font-size: 30px;
+          }
+          &-arrow {
+          }
+        }
+
+        &-text {
+          width: 100%;
+
+          p {
+            column-count: 1;
+            font-size: 13px;
+          }
+        }
+      }
+      &-text {
+        align-items: flex-start;
+
+        &-full {
+        gap: 40px;
+        grid-template-columns: 1fr ;
+
+          div {
+            gap: 24px;
+            max-width: 300px;
+
+            h3 {
+              font-size: 26px;
+              max-width: 100%;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @include mq(mobile-s) {
 }
