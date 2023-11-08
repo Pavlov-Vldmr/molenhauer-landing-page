@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/icons/favicon.ico" rel="icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./styles/swiper.min.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/scrypt.js" defer></script>
+    <script src="./js/swiper.min.js"></script>
+
 
     <title>Molenhauer</title>
   </head>
@@ -179,84 +184,80 @@
             </p>
           </div>
           <div class="benefit__slider-container">
-            <div class="stage-outer">
-              <div class="slider">
-                <div class="slider__items-container">
-                  <div class="benefit-slider-item item">
-                    <img
-                      src="./assets/images/image/factory-2.jpg"
-                      alt=""
-                      width="500px"
-                      height="500px"
-                    />
-                    <div class="text">
-                      <h3>
-                        Comprehensive planning methodology includes life-cycle
-                        know how
-                      </h3>
-                      <p>
-                        Our decade-long permanent presence on cement plants
-                        allows us to anticipate use changes, unexpected
-                        utilisation and lifetime expositions early on during
-                        planning. This allows us to design buildings that are
-                        flexible, long-lasting and economically efficient.
-                      </p>
-                    </div>
+            <!-- <div class="stage-outer"> -->
+            <div class="slider swiper benefitSwiper">
+              <div class="slider__items-container swiper-wrapper">
+                <div class="benefit-slider-item item swiper-slide">
+                  <img
+                    src="./assets/images/image/factory-2.jpg"
+                    alt=""
+                    width="500px"
+                    height="500px"
+                  />
+                  <div class="text">
+                    <h3>
+                      Comprehensive planning methodology includes life-cycle
+                      know how
+                    </h3>
+                    <p>
+                      Our decade-long permanent presence on cement plants allows
+                      us to anticipate use changes, unexpected utilisation and
+                      lifetime expositions early on during planning. This allows
+                      us to design buildings that are flexible, long-lasting and
+                      economically efficient.
+                    </p>
                   </div>
-                  <div class="benefit-slider-item item">
-                    <img
-                      src="./assets/images/image/constructor.png"
-                      alt=""
-                      width="500px"
-                      height="500px"
-                    />
-                    <div class="text">
-                      <h3>Test Heading 02</h3>
-                      <p>Paragraph text test lorem 0002</p>
-                    </div>
+                </div>
+                <div class="benefit-slider-item item swiper-slide">
+                  <img
+                    src="./assets/images/image/constructor.png"
+                    alt=""
+                    width="500px"
+                    height="500px"
+                  />
+                  <div class="text">
+                    <h3>Test Heading 02</h3>
+                    <p>Paragraph text test lorem 0002</p>
                   </div>
-                  <div class="benefit-slider-item item">
-                    <img
-                      src="./assets/images/image/factory-2.jpg"
-                      alt=""
-                      width="500px"
-                      height="500px"
-                    />
-                    <div class="text">
-                      <h3>Test Heading 03</h3>
-                      <p>Paragraph text test lorem 0003</p>
-                    </div>
+                </div>
+                <div class="benefit-slider-item item swiper-slide">
+                  <img
+                    src="./assets/images/image/factory-2.jpg"
+                    alt=""
+                    width="500px"
+                    height="500px"
+                  />
+                  <div class="text">
+                    <h3>Test Heading 03</h3>
+                    <p>Paragraph text test lorem 0003</p>
                   </div>
-                  <div class="benefit-slider-item item">
-                    <img
-                      src="./assets/images/image/constructor.png"
-                      alt=""
-                      width="500px"
-                      height="500px"
-                    />
-                    <div class="text">
-                      <h3>Test Heading 04</h3>
-                      <p>Paragraph text test lorem 0004</p>
-                    </div>
+                </div>
+                <div class="benefit-slider-item item swiper-slide">
+                  <img
+                    src="./assets/images/image/constructor.png"
+                    alt=""
+                    width="500px"
+                    height="500px"
+                  />
+                  <div class="text">
+                    <h3>Test Heading 04</h3>
+                    <p>Paragraph text test lorem 0004</p>
                   </div>
-                  <div class="benefit-slider-item item">
-                    <img
-                      src="./assets/images/image/bg-factory.png"
-                      alt=""
-                      width="500px"
-                      height="500px"
-                    />
-                    <div class="text">
-                      <h3>Test Heading 05</h3>
-                      <p>Paragraph text test lorem 0005</p>
-                    </div>
+                </div>
+                <div class="benefit-slider-item item swiper-slide">
+                  <img
+                    src="./assets/images/image/bg-factory.png"
+                    alt=""
+                    width="500px"
+                    height="500px"
+                  />
+                  <div class="text">
+                    <h3>Test Heading 05</h3>
+                    <p>Paragraph text test lorem 0005</p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="nav">
-              <div class="nav__dots dots">
+              <div class="nav__dots dots benefit-swiper-pagination">
                 <button class="benefit_slider-dot _dot">
                   <span>01</span>
                   <p>
@@ -264,44 +265,48 @@
                     how
                   </p>
                 </button>
-                <div class="pipe"></div>
+                <!-- <div class="pipe"></div> -->
                 <button class="benefit_slider-dot _dot">
                   <span>02</span>
                   <p>Greenfield. Brownfield. Ongoing Operation.</p>
                 </button>
-                <div class="pipe"></div>
+                <!-- <div class="pipe"></div> -->
                 <button class="benefit_slider-dot _dot">
                   <span>03</span>
                   <p>Reuse, rebuild, extend</p>
                 </button>
-                <div class="pipe"></div>
+                <!-- <div class="pipe"></div> -->
                 <button class="benefit_slider-dot _dot">
                   <span>04</span>
                   <p>Renovate, refurbish, revamp</p>
                 </button>
-                <div class="pipe"></div>
+                <!-- <div class="pipe"></div> -->
                 <button class="benefit_slider-dot _dot">
                   <span>05</span>
                   <p>Demolition</p>
                 </button>
               </div>
               <div class="nav__btns main-nav-slider-btns">
-                <button
-                  class="slider__nav-prev-button benefit-prev"
+                <div
+                  class="slider__nav-prev-button benefit-prev swiper-button-prev"
                   type="button"
                   aria-label="prev"
                 >
-                  <
-                </button>
-                <button
-                  class="slider__nav-next-button benefit-next"
+                  
+              </div>
+                <div
+                  class="slider__nav-next-button benefit-next swiper-button-next"
                   type="button"
                   aria-label="next"
                 >
-                  >
-                </button>
+                  
+                </div>
+                <!-- </div> -->
               </div>
+              <!-- </div> -->
             </div>
+
+            <!-- <div class="nav"> -->
           </div>
         </div>
       </section>
@@ -800,6 +805,25 @@
           </div>
         </div>
         <div class="footer__map-container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3150.507815580997!2d30.31213549562399!3d59.940067263009425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0K3RgNC80LjRgtCw0LY!5e0!3m2!1sru!2sru!4v1671661837199!5m2!1sru!2sru"
             width="100%"
@@ -823,5 +847,8 @@
         </div>
       </div>
     </footer>
+
+
+
   </body>
 </html>
