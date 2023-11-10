@@ -13,13 +13,14 @@
           height: 143px;
         }
         &__contacts {
-          padding: 20px 0 19px 44px;
+          padding: 20px 0 20px 17px;
           gap: 57px;
           top: 22px;
-          width: 361px;
+          width: 234px;
           height: 240px;
 
           &-logo{
+            display: none;
             a>img{
                 width: 54px;
                 height: 41px;
@@ -65,15 +66,15 @@
                 display: flex;
                 gap: 12px;
                 &-item {
-                  width: 30px;
-                  height: 30px;
+                  width: 28px;
+                  height: 28px;
                   span {
-                    font-size: 13px;
+                    font-size: 12px;
                   }
                   &::before {
-                    width: 30px;
-                    height: 30px;
-                    transform: translate(-30px, 30px) rotate(45deg);
+                    width: 28px;
+                    height: 28px;
+                    transform: translate(-28px, 28px) rotate(45deg);
                   }
                   &:hover {
                     &::before {

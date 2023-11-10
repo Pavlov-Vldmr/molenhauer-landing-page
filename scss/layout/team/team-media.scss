@@ -118,6 +118,56 @@
 @include mq(tablet) {
 }
 @include mq(mobile-l) {
+
+
+  // .team {
+    
+
+  //   &-container {
+  //       flex-wrap: wrap;
+      
+  //     &::before {
+        
+  //     }
+  //     &::after {
+        
+  //     }
+
+  //     .team-member {
+  //       @extend %member-card;
+  //     }
+  //   }
+
+  //   &__title {
+      
+
+  //     span {
+        
+  //     }
+  //   }
+  //   &__leadership {
+  //     gap: 10px;
+
+  //     .leadership-member {
+  //       @extend %leader-member-card;
+
+  //       &:first-child {
+  //         .member-photo::after {
+            
+  //         }
+  //       }
+  //       &:last-child {
+  //         .member-photo::after {
+            
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   .row {
+      
+  //   }
+  // }
   
 }
 @include mq(mobile-s) {

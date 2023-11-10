@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/icons/favicon.ico" rel="icon" type="image/x-icon" />
-    
+
     <link rel="stylesheet" href="./styles/swiper.min.css" />
     <link rel="stylesheet" href="./styles/index.css" />
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/scrypt.js" defer></script>
     <script src="./js/swiper.min.js"></script>
-
 
     <title>Molenhauer</title>
   </head>
@@ -125,7 +124,7 @@
         <div class="services__bg-factory"></div>
         <div class="services__math"></div>
       </section>
-      <section class="expirience container">
+      <section class="expirience">
         <div class="expirience__title">
           <h2>Broad expertise based on decades of experience</h2>
           <p>
@@ -133,37 +132,43 @@
             encounter.
           </p>
         </div>
-
-        <div class="expirience__cards">
-          <div class="card">
-            <span>01</span>
-            <p>Civil engineering</p>
+        <div class="swiper expirienceSwiper expirience__cards">
+          <div class="swiper-wrapper">
+            <!-- <div class=""> -->
+            <div class="card swiper-slide">
+              <span>01</span>
+              <p>Civil engineering</p>
+            </div>
+            <div class="card swiper-slide">
+              <span>02</span>
+              <p>Machine and building foundations</p>
+            </div>
+            <div class="card swiper-slide">
+              <span>03</span>
+              <p>Silo and slipform construction</p>
+            </div>
+            <div class="card swiper-slide">
+              <span>04</span>
+              <p>
+                Assesments, building inspection, concrete maintenance and repair
+              </p>
+            </div>
+            <div class="card swiper-slide">
+              <span>05</span>
+              <p>International cement factory construction</p>
+            </div>
+            <div class="card swiper-slide">
+              <span>06</span>
+              <p>Construction in ongoing operations</p>
+            </div>
+            <!-- </div> -->
           </div>
-          <div class="card">
-            <span>02</span>
-            <p>Machine and building foundations</p>
-          </div>
-          <div class="card">
-            <span>03</span>
-            <p>Silo and slipform construction</p>
-          </div>
-          <div class="card">
-            <span>04</span>
-            <p>
-              Assesments, building inspection, concrete maintenance and repair
-            </p>
-          </div>
-          <div class="card">
-            <span>05</span>
-            <p>International cement factory construction</p>
-          </div>
-          <div class="card">
-            <span>06</span>
-            <p>Construction in ongoing operations</p>
-          </div>
+          <div class="swiper-pagination expirience__cards-pagination"></div>
         </div>
+
         <div class="expirience__bg-gray"></div>
       </section>
+
       <section class="benefit">
         <div class="container">
           <div class="benefit__title">
@@ -171,13 +176,13 @@
               <h2>Benefit from Decades of Life Cycle Know How</h2>
             </div>
 
-            <p>
+            <p class="text-regular-gray">
               Our decade-long permanent presence on cement plants helps us to
               design buildings today that will be ready for whatever tomorrow
               brings. With our comprehensive planning methodology and building
               life cycle experience we anticipate use
             </p>
-            <p>
+            <p class="text-regular-gray">
               changes, unexpected utilisation and lifetime expositions early on
               during planning. This allows us to design buildings that are
               flexible, long-lasting, and economically efficient.
@@ -199,7 +204,7 @@
                       Comprehensive planning methodology includes life-cycle
                       know how
                     </h3>
-                    <p>
+                    <p class="text-regular-gray">
                       Our decade-long permanent presence on cement plants allows
                       us to anticipate use changes, unexpected utilisation and
                       lifetime expositions early on during planning. This allows
@@ -217,7 +222,7 @@
                   />
                   <div class="text">
                     <h3>Test Heading 02</h3>
-                    <p>Paragraph text test lorem 0002</p>
+                    <p class="text-regular-gray">Paragraph text test lorem 0002</p>
                   </div>
                 </div>
                 <div class="benefit-slider-item item swiper-slide">
@@ -229,7 +234,7 @@
                   />
                   <div class="text">
                     <h3>Test Heading 03</h3>
-                    <p>Paragraph text test lorem 0003</p>
+                    <p class="text-regular-gray">Paragraph text test lorem 0003</p>
                   </div>
                 </div>
                 <div class="benefit-slider-item item swiper-slide">
@@ -241,7 +246,7 @@
                   />
                   <div class="text">
                     <h3>Test Heading 04</h3>
-                    <p>Paragraph text test lorem 0004</p>
+                    <p class="text-regular-gray">Paragraph text test lorem 0004</p>
                   </div>
                 </div>
                 <div class="benefit-slider-item item swiper-slide">
@@ -253,7 +258,7 @@
                   />
                   <div class="text">
                     <h3>Test Heading 05</h3>
-                    <p>Paragraph text test lorem 0005</p>
+                    <p class="text-regular-gray">Paragraph text test lorem 0005</p>
                   </div>
                 </div>
               </div>
@@ -288,19 +293,16 @@
               </div>
               <div class="nav__btns main-nav-slider-btns">
                 <div
-                  class="slider__nav-prev-button benefit-prev swiper-button-prev"
+                  class="nav__btns-button benefit-prev swiper-button-prev"
                   type="button"
                   aria-label="prev"
-                >
-                  
-              </div>
+                ></div>
                 <div
-                  class="slider__nav-next-button benefit-next swiper-button-next"
+                  class="nav__btns-button benefit-next swiper-button-next"
                   type="button"
                   aria-label="next"
-                >
-                  
-                </div>
+                ></div>
+
                 <!-- </div> -->
               </div>
               <!-- </div> -->
@@ -310,71 +312,122 @@
           </div>
         </div>
       </section>
+
       <section class="clients">
+
         <div class="container">
+          
           <h2>Key Players in the cement industry trust us.</h2>
-          <div class="key-player">
-            <div class="stage-outer">
-              <div class="key-player__items">
-                <div class="key-player__items-item">
-                  <img
-                    src="./assets/images/image/key-player/tg-lodo.png"
-                    width="140px"
-                    height="auto"
-                    alt=""
-                  />
-                </div>
-                <div class="key-player__items-item">
-                  <img
-                    src="./assets/images/image/key-player/cemex-logo.png"
-                    width="140px"
-                    height="auto"
-                    alt=""
-                  />
-                </div>
-                <div class="key-player__items-item">
-                  <img
-                    src="./assets/images/image/key-player/zl-logo.png"
-                    width="140px"
-                    height="auto"
-                    alt=""
-                  />
-                </div>
-                <div class="key-player__items-item">
-                  <img
-                    src="./assets/images/image/key-player/bu-logo.png"
-                    width="140px"
-                    height="auto"
-                    alt=""
-                  />
-                </div>
-                <div class="key-player__items-item">
-                  <img
-                    src="./assets/images/image/key-player/cemex-logo.png"
-                    width="140px"
-                    height="auto"
-                    alt=""
-                  />
-                </div>
-                <div class="key-player__items-item">
-                  <img
-                    src="./assets/images/image/key-player/zl-logo.png"
-                    width="140px"
-                    height="auto"
-                    alt=""
-                  />
-                </div>
+          <div class="key-player swiper keyPlayerSwiper">
+            <!-- <div class="stage-outer"> -->
+            <div class="key-player__items swiper-wrapper">
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/tg-lodo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/cemex-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/zl-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/bu-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/cemex-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/zl-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/tg-lodo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/cemex-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/zl-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/bu-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/cemex-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+              <div class="key-player__items-item swiper-slide">
+                <img
+                  src="./assets/images/image/key-player/zl-logo.png"
+                  width="140px"
+                  height="auto"
+                  alt=""
+                />
               </div>
             </div>
+            <!-- </div> -->
 
             <div class="key-player__nav">
               <button
-                class="key-player__nav-prev-button"
+                class="key-player__nav-prev-button swiper-button-prev"
                 type="button"
                 aria-label="prev"
               ></button>
               <button
-                class="key-player__nav-next-button"
+                class="key-player__nav-next-button swiper-button-next"
                 type="button"
                 aria-label="next"
               ></button>
@@ -389,9 +442,9 @@
                 Euismod eros, in cursus aliquam.
               </p>
             </div>
-            <div class="clients-say__slider">
-              <div class="clients-say__slider__items-container">
-                <div class="clients-say__slider__item item">
+            <div class="swiper clientsSaySwiper clients-say__slider">
+              <div class="swiper-wrapper clients-say__slider__items-container">
+                <div class="clients-say__slider__item item swiper-slide">
                   <img
                     src="./assets/images/image/key-player/tg-lodo.png"
                     alt=""
@@ -407,7 +460,7 @@
                   <span class="name">Jack Carty</span
                   ><span class="position">seo</span>
                 </div>
-                <div class="clients-say__slider__item item">
+                <div class="clients-say__slider__item item swiper-slide">
                   <img
                     src="./assets/images/image/key-player/cemex-logo.png"
                     alt=""
@@ -419,9 +472,10 @@
                     voluptas, consectetur, sint dolores sit nobis asperiores qui
                     laudantium ad rerum quidem quibusdam. Consequatur, iusto.
                   </p>
-                  <span class="name"></span><span class="position">seo</span>
+                  <span class="name"></span>
+                  <span class="position">seo</span>
                 </div>
-                <div class="clients-say__slider__item item">
+                <div class="clients-say__slider__item item swiper-slide">
                   <img
                     src="./assets/images/image/key-player/zl-logo.png"
                     alt=""
@@ -436,7 +490,7 @@
                   <span class="name">Lorem, ipsum.</span
                   ><span class="position">seo</span>
                 </div>
-                <div class="clients-say__slider__item item">
+                <div class="clients-say__slider__item item swiper-slide">
                   <img
                     src="./assets/images/image/key-player/bu-logo.png"
                     alt=""
@@ -451,7 +505,7 @@
                   <span class="name">Lorem, ipsum.</span
                   ><span class="position">seo</span>
                 </div>
-                <div class="clients-say__slider__item item">
+                <div class="clients-say__slider__item item swiper-slide">
                   <img
                     src="./assets/images/image/key-player/cemex-logo.png"
                     alt=""
@@ -468,7 +522,7 @@
                 </div>
               </div>
               <div class="nav">
-                <div class="nav__dots dots">
+                <div class="nav__dots dots swiper-pagination">
                   <button class="clients-say_slider-dot _dot"></button>
                   <button class="clients-say_slider-dot _dot"></button>
                   <button class="clients-say_slider-dot _dot"></button>
@@ -477,19 +531,15 @@
                 </div>
                 <div class="nav__btns main-nav-slider-btns">
                   <button
-                    class="client-say__nav-prev-button"
+                    class="client-say__nav-prev-button swiper-button-prev"
                     type="button"
                     aria-label="prev"
-                  >
-                    <
-                  </button>
+                  ></button>
                   <button
-                    class="client-say__nav-next-button"
+                    class="client-say__nav-next-button swiper-button-next"
                     type="button"
                     aria-label="next"
-                  >
-                    >
-                  </button>
+                  ></button>
                 </div>
               </div>
             </div>
@@ -522,7 +572,7 @@
               <div class="clients__support-text-full">
                 <div>
                   <h3>Holistic planning</h3>
-                  <p>
+                  <p class="text-regular-gray">
                     Through continuous consideration of all circumstances, we
                     create futureproof buildings and frictionless construction
                     workflows. Systematic implementation of this holistic
@@ -534,7 +584,7 @@
                 </div>
                 <div>
                   <h3>Agile acting</h3>
-                  <p>
+                  <p class="text-regular-gray">
                     Our team can put results down on paper rapidly. In a world
                     that is increasingly characterized by changing and adapting
                     to uncertain circumstances, we can flexibly execute on
@@ -545,7 +595,7 @@
                 </div>
                 <div>
                   <h3>Reliable realisation.</h3>
-                  <p>
+                  <p class="text-regular-gray">
                     We prioritize project success over everything. Based on our
                     decades of experience we have developed the highest quality
                     standards and demonstrate with every new project our
@@ -556,8 +606,10 @@
             </div>
           </div>
         </div>
+
         <div class="clients__bg-gray"></div>
       </section>
+
       <section class="team">
         <div class="container">
           <div class="team__title">
@@ -578,7 +630,7 @@
               <div class="column">
                 <span class="member-name">Bernhard Meyer</span
                 ><span class="member-position">CEO</span>
-                <p class="member-text">
+                <p class="member-text text-regular-gray">
                   Viverra in turpis vitae tincidunt. Odio nunc netus consectetur
                   libero duis. Est quis vitae, sed egestas vehicula.
                 </p>
@@ -597,7 +649,7 @@
               <div class="column">
                 <span class="member-name">Bernhard Meyer</span
                 ><span class="member-position">Creative Director</span>
-                <p class="member-text">
+                <p class="member-text text-regular-gray">
                   Duis aenean ultricies ullamcorper neque cras vel. Quam sem
                   turpis est morbi nunc odio feugiat pellentesque. Eget risus
                   lectus donec tempus cras. Amet amet, auctor habitasse
@@ -805,25 +857,6 @@
           </div>
         </div>
         <div class="footer__map-container">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3150.507815580997!2d30.31213549562399!3d59.940067263009425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0K3RgNC80LjRgtCw0LY!5e0!3m2!1sru!2sru!4v1671661837199!5m2!1sru!2sru"
             width="100%"
@@ -847,8 +880,5 @@
         </div>
       </div>
     </footer>
-
-
-
   </body>
 </html>

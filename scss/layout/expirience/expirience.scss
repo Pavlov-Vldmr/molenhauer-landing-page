@@ -32,8 +32,12 @@
   }
 
   &__cards {
-    z-index: 2;
+    
+    overflow: unset;
+    background-color: red;
+    z-index: 500;
     display: flex;
+    flex-direction: row;
     height: 488px;
     width: 100%;
     background: url(./../assets/images/image/expirience-bg.svg);
@@ -41,6 +45,10 @@
     background-position-y: bottom;
     justify-content: center;
     background-size: contain;
+
+    &-pagination{
+      bottom: -20px;
+    }
 
     .card {
       box-sizing: border-box;
